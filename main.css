@@ -1,0 +1,94 @@
+body {
+    background-color: rgb(20, 20, 20);
+}
+
+header {
+    padding: 34px;
+    background-color: rgb(2, 2, 22);
+    color: aliceblue;
+    margin-bottom: 16px;
+}
+
+#carousel {
+    width: 100%;
+}
+
+.carousel-item h2 {
+    top: 8px;
+    left: 6px;
+    position: absolute;
+}
+
+.carousel-item h2,
+h3 {
+    color: aliceblue;
+    text-shadow:
+        -1px -1px 0 black,
+        1px -1px 0 black,
+        -1px 1px 0 black,
+        1px 1px 0 black;
+}
+
+section .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card {
+    max-width: 32%;
+    width: 100%;
+    margin-top: 30px;
+    background-color: rgb(44, 44, 58);
+    color: aliceblue;
+}
+
+#footer {
+    padding: 20px;
+    background-color: rgb(2, 2, 22);
+    margin-top: 38px;
+    color: aliceblue;
+}
+
+#footer p {
+    margin: 0;
+}
+
+@media screen and (max-width: 767px) {
+    header {
+        margin-bottom: 0;
+    }
+
+    #carousel-section .container {
+        padding: 0;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    section .container {
+        display: block;
+
+    }
+
+    .card {
+        max-width: 100%;
+        width: 100%;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:1023px) {
+    header {
+        margin-bottom: 0;
+    }
+
+    #carousel-section .container {
+        padding: 0;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .card {
+        max-width: 48%;
+        width: 100%;
+    }
+}
